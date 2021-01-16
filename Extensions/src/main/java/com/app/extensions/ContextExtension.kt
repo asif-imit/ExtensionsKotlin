@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.naxtre.laundryservices.kotlin_extension
+package com.app.extensions
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
@@ -20,7 +20,6 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import com.naxtre.laundryservices.R
 import com.google.android.material.snackbar.Snackbar
 
 /**
@@ -203,11 +202,11 @@ fun Context.sendGmail(
  * share the naxtre, it open the share screen,with
  * available apps to share the link for the naxtre
  * */
-fun Context.shareApp() {
+fun Context.shareApp(appName:String) {
     val playUrlPrefix = "https://play.icon_google.com/store/apps/details?id="
     val shareIntent = Intent(Intent.ACTION_SEND)
     shareIntent.type = "text/plain"
-    shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.title_share_app))
+    shareIntent.putExtra(Intent.EXTRA_SUBJECT, appName)
     val appUrl =
         "$playUrlPrefix$packageName"
     shareIntent.putExtra(Intent.EXTRA_TEXT, appUrl)

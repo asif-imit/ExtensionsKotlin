@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_no_recipients">No recipients provided</string>
+    <string name="err_no_sub_gmail">No subject mails lead to spam, please enter a subject</string>
+    <string name="err_gmail_not_found">Gmail not installed or disabled in your phone</string>
+    <string name="title_share_via">Share Via</string>
+</resources>
