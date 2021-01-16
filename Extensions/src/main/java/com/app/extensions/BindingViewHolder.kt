@@ -1,4 +1,4 @@
-package com.naxtre.laundryservices.kotlin_extension
+package com.app.extensions
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView

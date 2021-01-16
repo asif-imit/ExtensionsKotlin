@@ -1,4 +1,4 @@
-package com.naxtre.laundryservices.kotlin_extension.datetime
+package com.app.extensions.datetime
 
 import java.text.SimpleDateFormat
 import java.util.*
